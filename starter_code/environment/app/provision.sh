@@ -25,7 +25,8 @@ sudo npm install pm2 -g
 sudo apt-get install nginx -y
 
 # Unlink default configuration file
-sudo unlink /etc/nginx/sites-enabled/default 
+sudo unlink /etc/nginx/sites-enabled/default
+sudo rm /etc/nginx/sites-available/default 
 
 # Create a new configuration file
 # cd /etc/nginx/sites-available
