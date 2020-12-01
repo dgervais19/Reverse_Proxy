@@ -41,7 +41,7 @@ sudo unlink /etc/nginx/sites-enabled/default
 # source /etc/nginx/sites-available/reverse_proxy.config
 sudo cp /home/ubuntu/nginx_config/reverse_proxy.conf /etc/nginx/sites-available/reverse_proxy.conf
 
-ln -s /etc/nginx/sites-available/reverse_proxy.conf /etc/nginx/sites-enabled/reverse_proxy.conf
+sudo ln -s /etc/nginx/sites-available/reverse_proxy.conf /etc/nginx/sites-enabled/reverse_proxy.conf
 
 
 
@@ -52,4 +52,4 @@ cd /home/ubuntu/app
 
 sudo npm install
 
-pm2 start app.js --update--env
+npm start app
