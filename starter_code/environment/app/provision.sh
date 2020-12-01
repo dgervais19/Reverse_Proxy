@@ -46,10 +46,10 @@ sudo ln -s /etc/nginx/sites-available/reverse_proxy.conf /etc/nginx/sites-enable
 
 
 # finally, restart the nginx service so the new config takes hold
-sudo service nginx restart
+sudo systemctl restart nginx.service
 
 cd /home/ubuntu/app
 
 sudo npm install
 
-npm start app
+pm2 start app.js
