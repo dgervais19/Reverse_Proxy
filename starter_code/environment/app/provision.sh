@@ -31,12 +31,6 @@ sudo unlink /etc/nginx/sites-enabled/default
 # cd /etc/nginx/sites-available
 # sudo touch reverse_proxy.conf
 
-# echo ""server {
-#     listen 80;
-#     location /some/path/ {
-#         proxy_pass 192.168.10.100:3000;
-#     }
-# }"""
 
 # source /etc/nginx/sites-available/reverse_proxy.config
 sudo cp /home/ubuntu/nginx_config/reverse_proxy.conf /etc/nginx/sites-available/reverse_proxy.conf
